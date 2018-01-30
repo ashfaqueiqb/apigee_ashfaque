@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="helloworld">
+    <Basepaths>/hello</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1512643941080</CreatedAt>
+    <CreatedBy>ashfaque.ansari@tcs.com</CreatedBy>
+    <Description>hello world proxy</Description>
+    <DisplayName>helloworld</DisplayName>
+    <LastModifiedAt>1512643941080</LastModifiedAt>
+    <LastModifiedBy>ashfaque.ansari@tcs.com</LastModifiedBy>
+    <Policies/>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
