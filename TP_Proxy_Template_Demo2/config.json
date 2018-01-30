@@ -1,0 +1,23 @@
+{
+  "configurations": [
+    {
+      "name": "development",
+      "policies": [
+       
+      ],
+      "proxies": [
+          
+      ]
+    },
+    {
+      "name": "migration",
+      "policies": [
+       
+      ],
+      "proxies": [
+        
+		
+      ]
+    }
+  ]
+}

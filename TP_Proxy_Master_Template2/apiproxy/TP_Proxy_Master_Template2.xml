@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="TP_Proxy_Master_Template2">
+    <Basepaths>/temp</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1515864510157</CreatedAt>
+    <CreatedBy>tetrapak@tetrapak.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>TP_Proxy_Master_Template2</DisplayName>
+    <LastModifiedAt>1515865073182</LastModifiedAt>
+    <LastModifiedBy>tetrapak@tetrapak.com</LastModifiedBy>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

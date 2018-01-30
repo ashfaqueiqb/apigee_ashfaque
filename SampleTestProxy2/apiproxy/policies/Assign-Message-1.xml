@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage async="false" continueOnError="false" enabled="true" name="Assign-Message-1">
+    <DisplayName>Assign Message-1</DisplayName>
+    <Properties/>
+    <Set>
+        <Headers>
+            <Header name="CustomHeader1">12345</Header>
+            <Header name="CustomHeader2">67890</Header>
+        </Headers>
+        <Payload contentType="text/xml">
+            <request>
+                <operation>105</operation>
+            </request>
+        </Payload>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo createNew="false" transport="http" type="response"/>
+</AssignMessage>

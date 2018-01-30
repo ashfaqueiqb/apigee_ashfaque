@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <Description/>
+    <FaultRules/>
+	<!--Default fault rules are applicable for all flows-->
+    <DefaultFaultRule name="PlatformFaults">
+        <Step>
+            <Name>ApiCommon_RaiseFault_Throttle</Name>
+            <Condition>fault.name = "SpikeArrestViolation"</Condition>
+        </Step>
+        <Step>
+            <Name>ApiCommon_RaiseFault_Unauthorized</Name>
+            <Condition>(fault.name="InvalidApiKey" or fault.name="InvalidApiKeyForGivenResource" or fault.name="FailedToResolveAPIKey")</Condition>
+        </Step>
+        <Step>
+            <Name>ApiCommon_RaiseFault_BadRequest</Name>
+            <Condition>fault.name = "ThreatDetected" or jsonattack.failed ="true" or regularexpressionprotection.failed = "true"</Condition>
+        </Step>
+    </DefaultFaultRule>
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>ApiCommon_RaiseFault_InvalidHttpVerb</Name>
+                <Condition><!-- Put condition here--></Condition>
+            </Step>
+            <Step>
+                <Name>ApiCommon_RaiseFault_BadRequest</Name>
+               <Condition><!-- Put condition here--></Condition>
+            </Step>
+            <Step>
+                <Name>ApiCommon_RaiseFault_InsufficientHeader</Name>
+                <Condition><!-- Put condition here--></Condition>
+            </Step>
+            <Step>
+                <Name>ApiCommon_VerifyAPIKey_VerifyConsumer</Name>
+            </Step>
+            <Step>
+                <Name>ApiCommon_RaiseFault_Unauthorized</Name>
+                <Condition><!-- Put condition here--></Condition>
+            </Step>
+           </Request>
+        <Response/>
+    </PreFlow>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <Flows/>
+    <HTTPProxyConnection>
+        <BasePath>/temp</BasePath>
+        <Properties/>        
+        <VirtualHost>secure</VirtualHost>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>

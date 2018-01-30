@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="ApiCommon_RaiseFault_GatewayTimeout">
+    <DisplayName>ApiCommon_RaiseFault_GatewayTimeout</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Payload contentType="application/json">\{"error_code":"504","error_type":"GatewayTimeout/ConnectionTimeout","error_desc":"The gateway or connection has timedout"}</Payload>
+            <StatusCode>504</StatusCode>
+            <ReasonPhrase>GatewayTimeout/ConnectionTimeout</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

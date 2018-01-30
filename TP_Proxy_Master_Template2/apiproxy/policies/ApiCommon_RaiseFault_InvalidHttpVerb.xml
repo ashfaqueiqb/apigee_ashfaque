@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="ApiCommon_RaiseFault_InvalidHttpVerb">
+    <DisplayName>ApiCommon_RaiseFault_InvalidHttpVerb</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Payload contentType="application/json">\{"error_code":"405","error_type":"Method Not Allowed","error_desc":"The requested method is not correct"}</Payload>
+            <StatusCode>405</StatusCode>
+            <ReasonPhrase>Method Not Allowed</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

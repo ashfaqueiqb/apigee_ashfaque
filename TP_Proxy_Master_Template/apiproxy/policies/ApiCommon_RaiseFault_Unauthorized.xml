@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="ApiCommon_RaiseFault_Unauthorized">
+    <DisplayName>ApiCommon_RaiseFault_Unauthorized</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Payload contentType="application/json">\{"error_code":"401","error_type":"Unauthorized","error_desc":"You are not authorized."}</Payload>
+            <StatusCode>401</StatusCode>
+            <ReasonPhrase>Unauthorized</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

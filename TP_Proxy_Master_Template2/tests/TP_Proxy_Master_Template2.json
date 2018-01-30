@@ -1,0 +1,62 @@
+{
+	"id": "791042d2-770a-0df6-b46c-1e720bd1662a",
+	"name": "TP_Proxy_Master_Template2",
+	"description": "",
+	"order": [
+		"62e1e88b-b94f-77e4-2688-33d7507fd188",
+		"711f7c82-1f46-a3f2-182d-11a905f80470"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1515875474829,
+	"owner": "3114413",
+	"public": false,
+	"requests": [
+		{
+			"id": "62e1e88b-b94f-77e4-2688-33d7507fd188",
+			"headers": "",
+			"headerData": [],
+			"url": "https://api-dev.tetrapak.com/temp",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "791042d2-770a-0df6-b46c-1e720bd1662a",
+			"data": null,
+			"dataMode": "params",
+			"name": "get call",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515875476398,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "711f7c82-1f46-a3f2-182d-11a905f80470",
+			"headers": "",
+			"headerData": [],
+			"url": "https://api-dev.tetrapak.com/temp",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "791042d2-770a-0df6-b46c-1e720bd1662a",
+			"data": null,
+			"dataMode": "params",
+			"name": "StatusCode and resp Time Check",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1515875545334,
+			"version": 2,
+			"responses": [],
+			"tests": "tests[\"TP_Proxy_Master_Template2 Status code=>\"+responseCode.code] = responseCode.code === 200;\r\n\r\ntests[\"Access Token Response time should be less than 1000ms=>\"+responseTime] = responseTime < 1000;",
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}

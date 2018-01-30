@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<APIProxy revision="1" name="TP_Proxy_Template_Demo1">
+    <Basepaths>/mybp1</Basepaths>
+    <ConfigurationVersion majorVersion="4" minorVersion="0"/>
+    <CreatedAt>1515864510157</CreatedAt>
+    <CreatedBy>Siddhesh.Naik@tetrapak.com</CreatedBy>
+    <Description></Description>
+    <DisplayName>TP_Proxy_Template_Demo1</DisplayName>
+    <LastModifiedAt>1515865073182</LastModifiedAt>
+    <LastModifiedBy>Siddhesh.Naik@tetrapak.com1</LastModifiedBy>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources/>
+    <Spec></Spec>
+    <TargetServers/>
+    <TargetEndpoints/>
+    <validate>false</validate>
+</APIProxy>

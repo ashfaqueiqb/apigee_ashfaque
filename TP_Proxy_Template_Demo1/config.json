@@ -1,0 +1,45 @@
+{
+  "configurations": [
+    {
+      "name": "development",
+      "policies": [
+       
+      ],
+      "proxies": [
+          
+      ],
+      "targets": [
+        {
+          "name": "default.xml",
+          "tokens": [
+            {
+              "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+              "value": "https://api-dev.tetrapak.com/api/epims/v1/Test/Hello"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "migration",
+      "policies": [
+       
+      ],
+      "proxies": [
+        
+		
+      ],
+      "targets": [
+        {
+          "name": "default.xml",
+          "tokens": [
+            {
+              "xpath": "/TargetEndpoint/HTTPTargetConnection/URL",
+              "value": "https://api-mig.tetrapak.com/api/epims/v1/Test/Hello"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

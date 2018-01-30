@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<MessageLogging async="false" continueOnError="false" enabled="true" name="ApiCommon_SLM_Logger">
+    <DisplayName>ApiCommon_SLM_Logger</DisplayName>
+    <Syslog>
+        <Message>\{"system.timestamp":"{system.timestamp}","environment.name":"{environment.name}","apiproxy.name":"{apiproxy.name}"
+    ,"apiproxy.revision":"{apiproxy.revision}","proxy.pathsuffix":"{proxy.pathsuffix}","apigee.apiproduct.name":"{apigee.apiproduct.name}",
+    "apigee.client_id":"{apigee.client_id}","apigee.developer.app.name":"{apigee.developer.app.name}",
+    "request.header.X-Forwarded-For":"{request.header.X-Forwarded-For}","request.verb":"{request.verb}",
+    "log.uuid":"{messageid}","client.received.start.timestamp":"{client.received.start.timestamp}",
+    "client.sent.end.timestamp":"{client.sent.end.timestamp}","target.sent.start.timestamp":"{target.sent.start.timestamp}",
+    "target.received.end.timestamp":"{target.received.end.timestamp}","request.uri":"{request.uri}","request.querystring":"{request.querystring}",
+    "target.url":"{target.url}","target.request.url":"{request.url}","target.received.content.length":"{target.received.content.length}",
+    "message.status.code":"{message.status.code}","response.status.code":"{response.status.code}","request.header.Accept":"{request.header.Accept}",
+    "proxy.basepath":"{proxy.basepath}","response_reason_phrase":"{message.reason.phrase}","organization.name":"{organization.name}",
+    "virtualhost.name":"{virtualhost.name}","request.header.host":"{request.header.host}","error.state":"{error.state}"}</Message>
+        <Host>seluelkdev02.tp1.ad1.tetrapak.com</Host>
+        <Port>443</Port>
+        <Protocol>TCP</Protocol>
+        <SSLInfo>
+            <Enabled>true</Enabled>
+        </SSLInfo>
+        <FormatMessage>true</FormatMessage>
+    </Syslog>
+    <logLevel>ALERT</logLevel>
+</MessageLogging>

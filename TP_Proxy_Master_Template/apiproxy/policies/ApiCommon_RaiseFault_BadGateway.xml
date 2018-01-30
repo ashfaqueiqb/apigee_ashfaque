@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault async="false" continueOnError="false" enabled="true" name="ApiCommon_RaiseFault_BadGateway">
+    <DisplayName>ApiCommon_RaiseFault_BadGateway</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Payload contentType="application/json">\{"error_code":"502","error_type":"Bad gateway","error_desc":"Bad Gateway: Invalid response from an upstream server."}</Payload>
+            <StatusCode>502</StatusCode>
+            <ReasonPhrase>Bad gateway</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>
